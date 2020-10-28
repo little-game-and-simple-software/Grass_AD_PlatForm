@@ -16,7 +16,12 @@ if ($conn->connect_error) {
 else
 {
 	echo "连接成功";
-	echo $account;
-	echo $pwd;
+	echo "账号";
+	echo $_POST["account"];
+	echo "密码";
+	echo $_POST["pwd"];
+	mysqli_select_db($conn,"sfydb_6411555");
+	$sql="";
+	#mysqli_query($conn,$sql);
 }
 ?>
