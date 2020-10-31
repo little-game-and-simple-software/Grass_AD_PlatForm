@@ -30,7 +30,7 @@ function RandomAdShowTest()
 	}
 	else if(ResultNumber==4)
 	{
-	ImageAd.src="http://upload-images.jianshu.io/upload_images/10146677-557a547f45a2247f.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1536/q/50"
+	ImageAd.src="Ads/玩科光电.jpg"
 	}
 }
 //getAdImageNode()
