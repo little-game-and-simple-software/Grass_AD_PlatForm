@@ -12,7 +12,7 @@ function RandomAdShowTest()
 	//从Main.js生成随机数 需要将随机数存入全局变量
 	//打开新的广告页面时 加载完成 需要获得生成的随机数
 	//根据随机数来选择如何显示对应的广告
-	var FirstRandomNumber=Math.random()*4
+	var FirstRandomNumber=Math.random()*5
 	var ResultNumber=Math.floor(FirstRandomNumber)
 	console.log(ResultNumber)
 	console.log("测试随机数")
@@ -27,6 +27,10 @@ function RandomAdShowTest()
 	else if(ResultNumber==3)
 	{
 	ImageAd.src="Ads/蛋糕广告.webp"
+	}
+	else if(ResultNumber==4)
+	{
+	ImageAd.src="http://upload-images.jianshu.io/upload_images/10146677-557a547f45a2247f.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1536/q/50"
 	}
 }
 //getAdImageNode()
