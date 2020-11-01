@@ -4,12 +4,33 @@
 <title>如何使用草根广告联盟</title>
 </head>
 <body>
-<p>首先你得先引入代码
+<p>1.首先你得先引入代码
 <blockquote>
 <xmp>
-<script src=""></script>
+<script src="https://littlegame.opvs.me/Grass_AD_PlatForm/ShowAd.js"></script>
 </xmp>
 </blockquote>
+<p>2.然后再添加显示广告的img图片标签（自己在网页中添加一行img标签)</p>
+<blockquote>
+<xmp>
+<img id="MyNewAd"/>
+</xmp>
+</blockquote>
+<p>并输入对应的唯一自定义Id值</p>
+<p>注意：草根广告联盟根据此Id值获取你的广告位（img标签对象）</p>
+</p>
+<p>3.在你的body标签中修改为如下格式</p>
+<blockquote>
+<xmp>
+<body onload="getAdImageNode('MyNewAd')"></body>
+</xmp>
+</blockquote>
+<p>参数就是一开始自定义的广告位的img标签Id</p>
+<p>必须要在getAdImageNode()方法里面输入id参数，不然会获取不到img标签</p>
+<p>一切搞定的话，就能显示广告了</p>
+<p><b>
+如果出现无法访问js的问题，一般是域名过期了，请尽快联系我,qq:2439905184
+</b>
 </p>
 </body>
 </html>
