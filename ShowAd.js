@@ -1,10 +1,39 @@
-//初始化获得广告图像 需要优先运行
+//用来控制广告展示的核心js
+var ImageAd
+//初始化获得广告图像 需要优先运行 //废弃方法 
 function getAdImageNode(){
 
 ImageAd=document.getElementById("Ad")
 
-RandomAdShowTest()
+if(ImageAd!=null)
+{
+	console.log("旧方法获取到图片节点")
+//RandomAdShowTest()
 }
+else
+{
+	alert("错误不存在id为Ad的img标签")
+}
+}
+//初始化获得广告图像 需要优先运行
+function getAdImageNode(MyId){
+
+ImageAd=document.getElementById(MyId)
+console.log("节点Id"+MyId)
+if(ImageAd!=null)
+{
+	console.log("新方法获取到图片节点")
+	//如果获取到img标签，自动获取生成随机广告
+	console.log("获取到img标签，自动生成随机广告")
+	RandomAdShowTest()
+}
+else
+{
+	alert("错误新方法获取不到id为Ad的img标签")
+}
+
+}
+//RandomAdShowTest()
 function RandomAdShowTest()
 {
 	//默认随机生成0-1之间的数 *10之后范围变成0-10
@@ -16,6 +45,15 @@ function RandomAdShowTest()
 	var ResultNumber=Math.floor(FirstRandomNumber)
 	console.log(ResultNumber)
 	console.log("测试随机数")
+	
+	if(ImageAd)
+	{
+		console.log("图片节点存在")
+	}
+	else
+	{
+		alert("图片节点不存在")
+	}
 	if(ResultNumber==1)
 	{
 	ImageAd.src="Ads/小沙盒工作室.jpg"

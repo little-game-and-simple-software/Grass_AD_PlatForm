@@ -1,0 +1,33 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>案例</title>
+<script src="ShowAd.js"></script>
+</head>
+<body onload="getAdImageNode('MyAd')">
+
+<p>测试广告</p>
+<h2>使用wxDev-C++开发windows图形界面程序</h2>
+<p>首先去官网下载轻量级IDE——WxdevCpp,选择完整版下载，安装也要选择完整版。
+WxWidget是开源的图形界面库，可以制作图形化程序，而且是跨平台的，如果下载慢 可以用xdm这个开源下载器来下载。
+即linux上也可以编译图形程序。
+新建工程WxFrame
+,然后什么都别动，选择编译运行，一切正常就会运行出主界面。
+下面是图形化界面编辑器界面：
+<img alt="WxFrame" src="https://upload-images.jianshu.io/upload_images/23631084-3effd70c51665050.png?imageMogr2/auto-orient/strip|imageView2/2/w/303/format/webp">
+</p>
+<p>正文结束</p>
+<a href="https://www.jianshu.com/p/b6363b392d7a" target="_blank">原文链接</a>
+<hr></hr>
+<p>下面是广告页面</p>
+<img id="MyAd" src="work_studio.png" width="200px"/>
+<p>如果遇到异常，请联系qq:2439905184</p>
+<p>请按F5或者刷新按钮获取新的随机广告</p>
+<button onclick="RandomAdShowTest()">获取广告，此按钮只是用来给开发人员测试用的</button>
+<!--让开发者获取到，随机生成的图片src的网址，利用http request来显示广告
+，由于是使用这种方式显示广告的，非嵌入式广告，对于跨平台，跨系统，跨软件或者游戏对接广告等各种方面都很有用处
+简化开发者接入广告的流程，不需要将广告sdk嵌入软件，或者网站，只需要通过链接获取填充的广告即可
+
+-->
+</body>
+</html>
