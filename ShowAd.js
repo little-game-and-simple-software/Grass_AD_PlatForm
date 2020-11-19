@@ -1,4 +1,6 @@
 //用来控制广告展示的核心js
+//图片所存在的域名
+var ImageStoreUrl="https://littlegame.opvs.me/Grass_AD_PlatForm/Ads/"
 var ImageAd
 //初始化获得广告图像 需要优先运行 //废弃方法 
 function getAdImageNode(){
@@ -56,19 +58,19 @@ function RandomAdShowTest()
 	}
 	if(ResultNumber==1)
 	{
-	ImageAd.src="Ads/小沙盒工作室.jpg"
+	ImageAd.src=ImageStoreUrl+"小沙盒工作室.jpg"
 	}
 	else if(ResultNumber==2)
 	{
-	ImageAd.src="Ads/啤酒广告.webp"
+	ImageAd.src=ImageStoreUrl+"/啤酒广告.webp"
 	}
 	else if(ResultNumber==3)
 	{
-	ImageAd.src="Ads/蛋糕广告.webp"
+	ImageAd.src=ImageStoreUrl+"/蛋糕广告.webp"
 	}
 	else if(ResultNumber==4)
 	{
-	ImageAd.src="Ads/玩科光电.jpg"
+	ImageAd.src=ImageStoreUrl+"/玩科光电.jpg"
 	}
 }
 //getAdImageNode()
